@@ -66,9 +66,14 @@ function CalculateAge() {
     }
   }
 
-  isValidDate == true
-    ? computeAge(day, month, year, today)
-    : (document.getElementById("AgeInfo").innerHTML = "Invalid Date!");
+  if (isValidDate) {
+    computeAge(day, month, year, today);
+  } else {
+    document.getElementById("AgeInfo").innerHTML = "Invalid Date!";
+    document.getElementById("year").innerHTML = "--";
+    document.getElementById("mnth").innerHTML = "--";
+    document.getElementById("days").innerHTML = "--";
+  }
 }
 function computeAge(day, month, year, today) {
   debugger;
@@ -123,7 +128,7 @@ function computeAge(day, month, year, today) {
   else mAppendix = " month";
   if (days > 1) dAppendix = " days";
   else dAppendix = " day";
-
+  document.getElementById("AgeInfo").innerHTML = "";
   document.getElementById("year").innerHTML = years;
   document.getElementById("mnth").innerHTML = months;
   document.getElementById("days").innerHTML = days;
