@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+.card {
+  max-width: 700px;
+  min-width: 500px;
+}
+h1,
+span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+span {
+  color: hsl(259, 100%, 65%);
+}
+hr {
+  margin-inline-start: 0.8rem;
+  margin-block-start: 2.2rem !important;
+}
+label {
+  color: hsl(0, 1%, 44%);
+  font-family: "Poppins", sans-serif;
+  font-size: x-small;
+  letter-spacing: 2px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.card {
+  border-bottom-right-radius: 10rem;
+}
+.row {
+  margin-left: 0px;
+}
+#cc-day,
+#cc-month,
+#cc-year {
+  color: hsl(0, 1%, 44%);
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+.form-control {
+  font-size: 2rem;
+}
+.form-control:focus {
+  outline: none !important;
+  border: 1px solid hsl(259, 100%, 65%);
+  box-shadow: 0 0 10px hsl(0, 0%, 94%);
+}
+.form-control::placeholder {
+  color: hsl(0, 0%, 86%);
+  opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: hsl(0, 0%, 86%);
+}
+
+.form-control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: hsl(0, 0%, 86%);
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  border-radius: 35px;
+  font-size: 12px;
+  text-align: center;
+  background-color: hsl(259, 100%, 65%);
+  z-index: 10;
+}
+.btn.btn-dark.btn-circle.btn-xl:hover {
+  background-color: black;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/* input[type="number"] {
+  -moz-appearance: none;
+}
+ */
+@media only screen and (max-width: 767px) {
+  h1,
+  span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+  .card {
+    max-width: 375px;
+    min-width: 375px;
+  }
+  .form-control {
+    font-size: 1rem;
+    width: 80px;
+  }
+  .btn-circle.btn-xl {
+    margin-left: 7rem;
+    margin-top: -3rem;
+  }
+}
